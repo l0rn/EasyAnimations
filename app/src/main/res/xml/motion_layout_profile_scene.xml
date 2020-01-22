@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        app:constraintSetEnd="@layout/profile_motion_layout_end"
-        app:constraintSetStart="@layout/profile_motion_layout"
+        app:constraintSetEnd="@layout/sample_motion_layout_end"
+        app:constraintSetStart="@layout/sample_motion_layout_start"
         app:duration="500"
-        app:interpolator="linear">
+        app:motionInterpolator="linear">
 
         <OnSwipe
             app:dragDirection="dragUp"
@@ -18,45 +18,45 @@
                 app:framePosition="50"
                 app:keyPositionType="parentRelative"
                 app:percentY="0.40"
-                app:target="@+id/logoImage" />
+                app:motionTarget="@+id/logoImage" />
 
             <KeyAttribute
                 android:scaleX="2"
                 android:scaleY="2"
                 app:framePosition="50"
-                app:target="@id/logoImage" />
+                app:motionTarget="@id/logoImage" />
 
             <KeyPosition
                 app:framePosition="50"
                 app:keyPositionType="parentRelative"
                 app:percentY="-0.10"
-                app:target="@+id/sun" />
+                app:motionTarget="@+id/sun" />
 
             <KeyPosition
                 app:framePosition="50"
                 app:keyPositionType="parentRelative"
                 app:percentY="0.80"
-                app:target="@+id/title" />
+                app:motionTarget="@+id/title" />
 
             <KeyAttribute
                 android:rotationX="60"
                 app:framePosition="10"
-                app:target="@id/title" />
+                app:motionTarget="@id/title" />
 
             <KeyAttribute
                 android:rotationX="60"
                 app:framePosition="99"
-                app:target="@id/title" />
+                app:motionTarget="@id/title" />
 
             <KeyAttribute
                 android:rotationX="60"
                 app:framePosition="10"
-                app:target="@id/logoImage" />
+                app:motionTarget="@id/logoImage" />
 
             <KeyAttribute
                 android:rotationX="60"
                 app:framePosition="90"
-                app:target="@id/logoImage" />
+                app:motionTarget="@id/logoImage" />
 
 
         </KeyFrameSet>

@@ -8,6 +8,6 @@ class ProfileMotionLayoutActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.profile_motion_layout)
+        setContentView(R.layout.sample_motion_layout_start)
     }
 }

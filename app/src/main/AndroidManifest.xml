@@ -9,19 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
-        <activity
-            android:name=".DetailActivity"
-            android:label="@string/title_activity_detail"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".splash.SplashActivity"
-            android:theme="@style/FullScreenTheme"></activity>
-        <activity
-            android:name=".motionlayout.MotionLayoutActivity"
-            android:theme="@style/FullScreenTheme">
-
-        </activity>
         <activity
             android:name=".motionlayout.ProfileMotionLayoutActivity"
             android:theme="@style/FullScreenTheme">
@@ -32,5 +19,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

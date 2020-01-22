@@ -162,11 +162,8 @@
     <include
         android:id="@+id/scrollableContent"
         layout="@layout/content_lorem_ipsum"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:elevation="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbarSpace" />
