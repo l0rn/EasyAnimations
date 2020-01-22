@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@layout/profile_motion_layout_end"
+        app:constraintSetStart="@layout/profile_motion_layout"
+        app:duration="500"
+        app:interpolator="linear">
+
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:touchAnchorId="@id/scrollableContent"
+            app:touchAnchorSide="top" />
+
+        <KeyFrameSet>
+            <KeyPosition
+                app:framePosition="50"
+                app:keyPositionType="parentRelative"
+                app:percentY="0.40"
+                app:target="@+id/logoImage" />
+
+            <KeyAttribute
+                android:scaleX="2"
+                android:scaleY="2"
+                app:framePosition="50"
+                app:target="@id/logoImage" />
+
+            <KeyPosition
+                app:framePosition="50"
+                app:keyPositionType="parentRelative"
+                app:percentY="-0.10"
+                app:target="@+id/sun" />
+
+            <KeyPosition
+                app:framePosition="50"
+                app:keyPositionType="parentRelative"
+                app:percentY="0.80"
+                app:target="@+id/title" />
+
+            <KeyAttribute
+                android:rotationX="60"
+                app:framePosition="10"
+                app:target="@id/title" />
+
+            <KeyAttribute
+                android:rotationX="60"
+                app:framePosition="99"
+                app:target="@id/title" />
+
+            <KeyAttribute
+                android:rotationX="60"
+                app:framePosition="10"
+                app:target="@id/logoImage" />
+
+            <KeyAttribute
+                android:rotationX="60"
+                app:framePosition="90"
+                app:target="@id/logoImage" />
+
+
+        </KeyFrameSet>
+
+    </Transition>
+
+</MotionScene>
