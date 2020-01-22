@@ -1,8 +1,8 @@
 package com.weraremobilefirst.animations.splash
 
 import android.os.Bundle
-import android.support.constraint.ConstraintSet
-import android.support.v7.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintSet
+import androidx.appcompat.app.AppCompatActivity
 import android.transition.ChangeBounds
 import android.transition.Transition
 import android.transition.TransitionManager

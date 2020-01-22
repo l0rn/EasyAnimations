@@ -1,13 +1,13 @@
 package com.weraremobilefirst.animations
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
-import android.support.v4.view.ViewCompat
-import android.support.v4.app.ActivityOptionsCompat
+import androidx.core.view.ViewCompat
+import androidx.core.app.ActivityOptionsCompat
 import android.content.Intent
 import android.view.View
-import android.support.v4.util.Pair as AndroidPair
+import androidx.core.util.Pair as AndroidPair
 
 class MainActivity : AppCompatActivity() {
 
